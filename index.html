@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Ordering System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header with Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Customer Order Form</h1>
+        <form id="orderForm">
+            <div>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+            </div>
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" required>
+            </div>
+            <div>
+                <label for="gender">Gender:</label>
+                <input type="radio" name="gender" value="Male" required> Male
+                <input type="radio" name="gender" value="Female" required> Female
+            </div>
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" required>
+            </div>
+            <div>
+                <label>Order Type:</label>
+                <input type="checkbox" name="orderType" value="Shawarma"> Shawarma
+                <input type="checkbox" name="orderType" value="Zinger"> Zinger
+                <input type="checkbox" name="orderType" value="Burger"> Burger
+            </div>
+            <div>
+                <label>Order Option:</label>
+                <input type="radio" name="orderOption" value="Combo" required> Combo
+                <input type="radio" name="orderOption" value="Sandwich" required> Sandwich
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="orderDetails"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Restaurant Ordering System</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
